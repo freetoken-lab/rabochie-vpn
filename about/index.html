@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О проекте — Рабочие VPN для России</title>
+  <meta name="description" content="О проекте rabochie-vpn.com — независимое тестирование VPN-сервисов на российских подключениях.">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #0A090D; color: #fff; font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.7; font-size: 16px; }
+    a { color: #FBBF24; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header { background: #111018; border-bottom: 2px solid #FBBF24; padding: 16px 0; }
+    .header-inner { max-width: 900px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .logo { display: flex; align-items: center; gap: 10px; font-size: 1.1rem; font-weight: 700; color: #FBBF24; }
+    nav ul { list-style: none; display: flex; gap: 20px; }
+    nav ul li a { color: #ccc; font-size: 0.9rem; }
+    nav ul li a:hover { color: #FBBF24; }
+    main { max-width: 900px; margin: 0 auto; padding: 48px 20px; }
+    h1 { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 800; margin-bottom: 20px; color: #fff; }
+    h2 { font-size: 1.3rem; font-weight: 700; margin: 36px 0 14px; color: #FBBF24; border-left: 4px solid #FBBF24; padding-left: 12px; }
+    p { color: #ccc; margin-bottom: 14px; }
+    ul.content-list { padding-left: 22px; margin-bottom: 14px; }
+    ul.content-list li { color: #ccc; margin-bottom: 8px; }
+    .highlight-box { background: #16141C; border: 1px solid #2a2830; border-radius: 10px; padding: 20px 24px; margin: 24px 0; }
+    footer { background: #0d0c14; border-top: 1px solid #2a2830; margin-top: 60px; padding: 24px 0; text-align: center; color: #555; font-size: 0.85rem; }
+    footer a { color: #FBBF24; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="logo" href="/">
+      <svg width="30" height="30" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17 2L4 8v9c0 8.3 5.6 16 13 18 7.4-2 13-9.7 13-18V8L17 2z" fill="#FBBF24" opacity="0.15"/>
+        <path d="M17 2L4 8v9c0 8.3 5.6 16 13 18 7.4-2 13-9.7 13-18V8L17 2z" stroke="#FBBF24" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M12 17l3.5 3.5L22 13" stroke="#FBBF24" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Рабочие VPN
+    </a>
+    <nav>
+      <ul>
+        <li><a href="/">Главная</a></li>
+        <li><a href="/privacy-policy/">Политика конфиденциальности</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <h1>О проекте</h1>
+
+  <p>Rabochie-vpn.com — независимый информационный ресурс, посвящённый тестированию и сравнению VPN-сервисов, которые реально работают в России в условиях ограничений ТСПУ. Мы не связаны ни с одним VPN-провайдером и публикуем только те сервисы, которые прошли наши практические проверки.</p>
+
+  <h2>Почему мы начали этот проект?</h2>
+  <p>В 2022–2023 годах ситуация с доступом к интернету в России резко изменилась. Большинство популярных VPN перестали работать — ТСПУ научился блокировать стандартные протоколы. В сети появилось множество устаревших «рейтингов», рекомендующих сервисы, которые давно не работают в России.</p>
+  <p>Мы создали этот проект, потому что сами столкнулись с этой проблемой: перепробовали десятки VPN, прочитали сотни отзывов — и решили систематически тестировать и публиковать актуальные результаты, чтобы помочь другим людям не тратить деньги и время на нерабочие решения.</p>
+
+  <h2>Наш подход к тестированию</h2>
+  <p>Каждый VPN в нашем рейтинге проходит реальное тестирование, а не просто маркетинговый анализ. Вот что мы проверяем:</p>
+  <ul class="content-list">
+    <li><strong>Работа на мобильных операторах</strong> — тестируем на МТС, Билайн, МегаФон и Теле2 (мобильные сети блокируют агрессивнее, чем домашний интернет).</li>
+    <li><strong>Работа на проводном интернете</strong> — тестируем на Ростелеком и ДОМ.РУ.</li>
+    <li><strong>Скорость соединения</strong> — замеры через speedtest.net на серверах в Москве, Санкт-Петербурге и за рубежом.</li>
+    <li><strong>Утечки DNS</strong> — проверяем через dnsleaktest.com и ipleak.net.</li>
+    <li><strong>Утечки WebRTC</strong> — проверяем через browserleaks.com.</li>
+    <li><strong>Стабильность соединения</strong> — мониторинг непрерывного соединения в течение 24–72 часов.</li>
+    <li><strong>Работа с YouTube</strong> — проверка воспроизведения 4K-контента на серверах в разных странах.</li>
+  </ul>
+
+  <h2>Технические детали</h2>
+  <div class="highlight-box">
+    <p>Тестирование проводится на следующем оборудовании и в следующих условиях:</p>
+    <ul class="content-list">
+      <li>Смартфоны: Android 13+ и iOS 17+ с актуальными приложениями VPN</li>
+      <li>ПК: Windows 11 и macOS Sonoma</li>
+      <li>Роутер: TP-Link с OpenWrt для тестов на уровне сети</li>
+      <li>Базовая скорость подключения: 100–500 Мбит/с</li>
+      <li>Локация тестирования: Россия (несколько городов)</li>
+      <li>Период тестирования: не менее 2 недель на каждый сервис</li>
+    </ul>
+  </div>
+
+  <h2>Как часто обновляем данные?</h2>
+  <p>Ситуация с VPN в России меняется быстро — Роскомнадзор регулярно расширяет список блокировок. Мы обновляем результаты тестирования:</p>
+  <ul class="content-list">
+    <li><strong>Ежеквартально</strong> — полное переиспытание всех сервисов в рейтинге.</li>
+    <li><strong>Оперативно</strong> — при появлении информации о новых массовых блокировках или, напротив, о том, что заблокированный VPN снова заработал.</li>
+    <li><strong>По обращениям читателей</strong> — если вы сообщаете нам, что сервис перестал работать или появился новый достойный вариант.</li>
+  </ul>
+  <p>Дата последнего обновления рейтинга всегда указана в шапке главной страницы.</p>
+
+  <h2>Наши принципы</h2>
+  <ul class="content-list">
+    <li><strong>Независимость</strong> — мы не продаём места в рейтинге и не принимаем оплату за положительные отзывы. Порядок в рейтинге определяется только результатами тестов.</li>
+    <li><strong>Прозрачность</strong> — мы указываем партнёрские ссылки (помечены rel="nofollow"). Это помогает поддерживать проект, но не влияет на оценки.</li>
+    <li><strong>Актуальность</strong> — устаревшие результаты вводят в заблуждение. Мы удаляем из рейтинга сервисы, которые перестали работать.</li>
+    <li><strong>Честность</strong> — если сервис не прошёл тест, мы не включаем его в рейтинг, даже если он предлагает высокое партнёрское вознаграждение.</li>
+  </ul>
+
+  <h2>Обратная связь</h2>
+  <p>Если вы обнаружили, что какой-то VPN из нашего рейтинга перестал работать, или знаете достойный сервис, который мы ещё не тестировали — напишите нам. Ваш опыт поможет другим пользователям.</p>
+  <p>Связаться с нами можно по email: <a href="mailto:info@rabochie-vpn.com">info@rabochie-vpn.com</a></p>
+  <p>Мы читаем все письма и отвечаем на вопросы о тестировании и настройке VPN.</p>
+</main>
+
+<footer>
+  <p>© 2026 <a href="/">rabochie-vpn.com</a> · <a href="/privacy-policy/">Политика конфиденциальности</a></p>
+</footer>
+
+</body>
+</html>
