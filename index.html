@@ -114,11 +114,68 @@
     .footer-col ul li a:hover { color: #FBBF24; }
     .footer-bottom { max-width: 1100px; margin: 24px auto 0; padding: 16px 20px 0; border-top: 1px solid #2a2830; text-align: center; color: #555; font-size: 0.8rem; }
 
+    /* Burger button */
+    .burger-btn { display: none; background: none; border: none; cursor: pointer; padding: 6px; color: #FBBF24; line-height: 0; }
+
     /* Responsive nav */
     @media (max-width: 700px) {
-      nav ul { gap: 4px; }
-      nav ul li a { font-size: 0.8rem; padding: 3px 7px; }
+      .burger-btn { display: flex; align-items: center; justify-content: center; }
+      nav { display: none; width: 100%; }
+      nav.nav-open { display: block; }
+      nav ul { flex-direction: column; gap: 2px; padding: 8px 0; }
+      nav ul li a { display: block; font-size: 0.9rem; padding: 8px 12px; }
       .tl-right { align-items: flex-start; }
+    }
+
+    /* Sticky CTA bar */
+    .sticky-cta-bar {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #462D19;
+      border-top: 1px solid #703709;
+      z-index: 999;
+      padding: 12px 44px 12px 20px;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+    }
+    .sticky-cta-bar.visible { display: flex; }
+    .sticky-cta-bar .cta-text { color: #fff; font-size: 0.95rem; font-weight: 500; }
+    .sticky-cta-bar .cta-text-mobile { display: none; }
+    .sticky-cta-bar .btn-green {
+      display: inline-block;
+      background: #22c55e;
+      color: #000;
+      font-weight: 700;
+      padding: 9px 22px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      white-space: nowrap;
+      text-decoration: none;
+      transition: background 0.2s;
+      flex-shrink: 0;
+    }
+    .sticky-cta-bar .btn-green:hover { background: #16a34a; text-decoration: none; }
+    .sticky-cta-bar .cta-close {
+      position: absolute;
+      top: 6px;
+      right: 12px;
+      background: none;
+      border: none;
+      color: #bbb;
+      font-size: 1.2rem;
+      cursor: pointer;
+      line-height: 1;
+      padding: 2px 6px;
+    }
+    .sticky-cta-bar .cta-close:hover { color: #fff; }
+    @media (max-width: 700px) {
+      .sticky-cta-bar { padding: 10px 44px 10px 12px; gap: 10px; }
+      .sticky-cta-bar .cta-text-desktop { display: none; }
+      .sticky-cta-bar .cta-text-mobile { display: inline; }
     }
   </style>
 </head>
@@ -134,7 +191,7 @@
       </svg>
       Рабочие VPN
     </div>
-    <nav>
+    <nav id="mainNav">
       <ul>
         <li><a href="#kak-vybrat">Как выбирать</a></li>
         <li><a href="#rating">Рейтинг VPN</a></li>
@@ -145,6 +202,13 @@
         <li><a href="#faq">FAQ</a></li>
       </ul>
     </nav>
+    <button class="burger-btn" id="burgerBtn" aria-label="Открыть меню" aria-expanded="false">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect y="4" width="24" height="2.5" rx="1.25" fill="currentColor"/>
+        <rect y="10.75" width="24" height="2.5" rx="1.25" fill="currentColor"/>
+        <rect y="17.5" width="24" height="2.5" rx="1.25" fill="currentColor"/>
+      </svg>
+    </button>
   </div>
 </header>
 
@@ -234,7 +298,7 @@
         </div>
         <div class="tl-right">
           <div class="tl-rating">⭐ 9.0/10</div>
-          <a class="btn" href="https://adguard-vpnxy.help/ru/license.html?aid=34445" rel="nofollow noopener" target="_blank">Попробовать →</a>
+          <a class="btn" href="https://awxugoldha.execute-api.eu-north-1.amazonaws.com/" rel="nofollow noopener" target="_blank">Попробовать →</a>
         </div>
       </div>
 
@@ -432,7 +496,7 @@
         </div>
       </div>
       <div class="review-cta">
-        <a class="btn" href="https://adguard-vpnxy.help/ru/license.html?aid=34445" rel="nofollow noopener" target="_blank">Попробовать AdGuard VPN →</a>
+        <a class="btn" href="https://awxugoldha.execute-api.eu-north-1.amazonaws.com/" rel="nofollow noopener" target="_blank">Попробовать AdGuard VPN →</a>
       </div>
     </div>
 
@@ -938,6 +1002,61 @@
     <p>© 2026 rabochie-vpn.com · Информация предоставляется в ознакомительных целях. Партнёрские ссылки помечены nofollow.</p>
   </div>
 </footer>
+
+<!-- Sticky CTA Bar -->
+<div class="sticky-cta-bar" id="stickyCta" role="complementary" aria-label="Специальное предложение">
+  <button class="cta-close" id="ctaCloseBtn" aria-label="Закрыть">&#x2715;</button>
+  <span class="cta-text cta-text-desktop">🏆ZoogVPN - скидка 78% + 3 месяца бесплатно</span>
+  <span class="cta-text cta-text-mobile">🏆ZoogVPN - 78%</span>
+  <a class="btn-green" href="https://storage.yandexcloud.net/devozon/index_yandex_rus.html?relative_path=/ru-ru/best-vpn-offer-for-russia/&utm_source=zoog_affiliate&utm_medium=revshare&utm_campaign=aff664229459a657&a_aid=664229459a657" rel="nofollow noopener" target="_blank">Скачать</a>
+</div>
+
+<script>
+  // Burger menu toggle
+  (function() {
+    var btn = document.getElementById('burgerBtn');
+    var nav = document.getElementById('mainNav');
+    if (!btn || !nav) return;
+    btn.addEventListener('click', function() {
+      var isOpen = nav.classList.toggle('nav-open');
+      btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+    nav.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        nav.classList.remove('nav-open');
+        btn.setAttribute('aria-expanded', 'false');
+      });
+    });
+  })();
+
+  // Sticky CTA bar – show after scrolling past hero section
+  (function() {
+    var bar = document.getElementById('stickyCta');
+    var closeBtn = document.getElementById('ctaCloseBtn');
+    var hero = document.querySelector('.hero');
+    if (!bar || !hero) return;
+
+    function updateBar() {
+      var heroRect = hero.getBoundingClientRect();
+      if (heroRect.bottom < 0) {
+        bar.classList.add('visible');
+      } else {
+        bar.classList.remove('visible');
+      }
+    }
+
+    window.addEventListener('scroll', updateBar, { passive: true });
+
+    if (closeBtn) {
+      closeBtn.addEventListener('click', function() {
+        bar.classList.remove('visible');
+        window.removeEventListener('scroll', updateBar);
+        // Prevent scroll handler from re-adding 'visible'
+        bar._dismissed = true;
+      });
+    }
+  })();
+</script>
 
 </body>
 </html>
