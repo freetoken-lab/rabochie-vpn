@@ -98,6 +98,13 @@
     .sticky-cta-btn:hover { background: #16a34a; text-decoration: none; color: #000; }
     .sticky-cta-close { background: none; border: none; color: #ccc; font-size: 1.1rem; cursor: pointer; padding: 2px 6px; border-radius: 4px; line-height: 1; flex-shrink: 0; }
     .sticky-cta-close:hover { color: #fff; }
+    .burger { display: none; flex-direction: column; justify-content: space-between; width: 28px; height: 20px; cursor: pointer; background: none; border: none; padding: 0; }
+    .burger span { display: block; width: 100%; height: 3px; background: #FBBF24; border-radius: 2px; transition: all 0.3s; }
+    .burger.open span:nth-child(1) { transform: translateY(8.5px) rotate(45deg); }
+    .burger.open span:nth-child(2) { opacity: 0; }
+    .burger.open span:nth-child(3) { transform: translateY(-8.5px) rotate(-45deg); }
+    .sticky-cta-text .mobile-text { display: none; }
+    .sticky-cta-text .desktop-text { display: inline; }
     @media (max-width: 700px) {
       nav { display: none; }
       nav.open { display: block; position: absolute; top: 100%; left: 0; right: 0; background: #111018; padding: 12px 20px; border-bottom: 2px solid #FBBF24; z-index: 99; }
@@ -109,12 +116,6 @@
       .sticky-cta-text .mobile-text { display: inline; }
       .sticky-cta-text .desktop-text { display: none; }
     }
-    .burger { display: none; flex-direction: column; justify-content: space-between; width: 28px; height: 20px; cursor: pointer; background: none; border: none; padding: 0; }
-    .burger span { display: block; width: 100%; height: 3px; background: #FBBF24; border-radius: 2px; transition: all 0.3s; }
-    .burger.open span:nth-child(1) { transform: translateY(8.5px) rotate(45deg); }
-    .burger.open span:nth-child(2) { opacity: 0; }
-    .burger.open span:nth-child(3) { transform: translateY(-8.5px) rotate(-45deg); }
-    .sticky-cta-text .mobile-text { display: none; }
   </style>
 </head>
 <body>
