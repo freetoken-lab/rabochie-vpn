@@ -1,1 +1,969 @@
-
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лучшие VPN для роутера 2026 в России - Установка на Keenetic, ASUS, TP-Link, Xiaomi</title>
+  <meta name="description" content="Как установить VPN на роутер в России в 2026 году? Рейтинг лучших VPN для роутера Keenetic, ASUS, TP-Link и Xiaomi, протоколы, прошивки DD-WRT и OpenWRT, пошаговые инструкции.">
+  <link rel="canonical" href="https://rabochie-vpn.vercel.app/vpn-dlya-routera/">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 34'%3E%3Crect width='34' height='34' rx='6' fill='%230A090D'/%3E%3Cpath d='M17 3L5 8.5v8.5c0 7.5 5 14.5 12 16.5 7-2 12-9 12-16.5V8.5z' fill='%23FBBF24' opacity='0.18'/%3E%3Cpath d='M17 3L5 8.5v8.5c0 7.5 5 14.5 12 16.5 7-2 12-9 12-16.5V8.5z' stroke='%23FBBF24' stroke-width='1.8' stroke-linejoin='round' fill='none'/%3E%3Cpath d='M12 17l3.5 3.5L22 13' stroke='%23FBBF24' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #0A090D; color: #fff; font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.7; font-size: 16px; }
+    a { color: #FBBF24; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+ 
+    header { background: #111018; border-bottom: 2px solid #FBBF24; padding: 16px 0; position: sticky; top: 0; z-index: 100; }
+    .header-inner { max-width: 1100px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .logo { display: flex; align-items: center; gap: 10px; font-size: 1.2rem; font-weight: 700; color: #FBBF24; }
+    .logo svg { flex-shrink: 0; }
+    nav ul { list-style: none; display: flex; flex-wrap: wrap; gap: 6px; }
+    nav ul li a { color: #ccc; font-size: 0.88rem; padding: 4px 10px; border-radius: 4px; transition: background 0.2s; }
+    nav ul li a:hover { background: #FBBF24; color: #000; text-decoration: none; }
+ 
+    main { max-width: 1100px; margin: 0 auto; padding: 40px 20px; }
+ 
+    .hero { margin-bottom: 40px; }
+    .hero h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 800; line-height: 1.3; margin-bottom: 12px; color: #fff; text-align: center; }
+    .hero .updated-wrap { text-align: center; margin-bottom: 18px; }
+    .hero .updated { display: inline-block; color: #10B981; font-size: 0.85rem; border: 1.5px solid #10B981; border-radius: 20px; padding: 4px 14px; }
+    .hero p { color: #ccc; margin-bottom: 14px; }
+ 
+    h2 { font-size: clamp(1.3rem, 2.5vw, 1.8rem); font-weight: 700; margin: 48px 0 18px; color: #FBBF24; border-left: 4px solid #FBBF24; padding-left: 14px; }
+    h3 { font-size: 1.2rem; font-weight: 700; margin: 32px 0 12px; color: #fff; }
+    h4 { font-size: 1rem; font-weight: 700; margin-bottom: 10px; color: #FBBF24; }
+    p { margin-bottom: 14px; color: #ccc; }
+ 
+    ul.content-list { padding-left: 22px; margin-bottom: 14px; }
+    ul.content-list li { color: #ccc; margin-bottom: 8px; }
+    ol.steps-list { padding-left: 22px; margin-bottom: 14px; }
+    ol.steps-list li { color: #ccc; margin-bottom: 10px; }
+ 
+    .toplist { display: flex; flex-direction: column; gap: 16px; margin: 24px 0 40px; }
+    .toplist-item { background: #16141C; border: 1px solid #2a2830; border-radius: 12px; padding: 20px 24px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; transition: border-color 0.2s; }
+    .toplist-item:hover { border-color: #FBBF24; }
+    .toplist-item.top1 { border-color: #FBBF24; }
+    .tl-rank { font-size: 1.6rem; font-weight: 900; color: #FBBF24; min-width: 36px; }
+    .tl-info { flex: 1; min-width: 180px; }
+    .tl-name { font-size: 1.15rem; font-weight: 700; color: #fff; margin-bottom: 4px; }
+    .tl-badge { display: inline-block; font-size: 0.75rem; font-weight: 700; padding: 2px 8px; border-radius: 20px; margin-bottom: 6px; }
+    .tl-desc { font-size: 0.88rem; color: #aaa; }
+    .tl-usps { font-size: 0.82rem; color: #888; margin-top: 6px; line-height: 1.8; }
+    .tl-reviews { font-size: 0.78rem; color: #888; margin-top: 5px; }
+    .tl-right { display: flex; flex-direction: column; align-items: flex-end; gap: 10px; }
+    .tl-rating { font-size: 1.1rem; font-weight: 700; color: #FBBF24; }
+    .btn { display: inline-block; background: #FBBF24; color: #000; font-weight: 700; padding: 10px 24px; border-radius: 8px; font-size: 0.95rem; transition: background 0.2s, transform 0.1s; white-space: nowrap; }
+    .btn:hover { background: #f0b020; text-decoration: none; transform: translateY(-1px); }
+ 
+    .pro-tip { background: #1a1825; border-left: 3px solid #FBBF24; padding: 10px 16px; border-radius: 0 8px 8px 0; margin: 14px 0; color: #ccc; font-style: italic; }
+    .warn-tip { background: #1a1210; border-left: 3px solid #f87171; padding: 10px 16px; border-radius: 0 8px 8px 0; margin: 14px 0; color: #ccc; font-style: italic; }
+ 
+    .review-card { background: #16141C; border: 1px solid #2a2830; border-radius: 12px; padding: 24px; margin-bottom: 28px; }
+    .review-card h3 { margin-top: 0; }
+    .review-meta { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 16px; }
+    .review-tag { background: #23212c; color: #FBBF24; border-radius: 6px; padding: 3px 10px; font-size: 0.8rem; }
+    .chars-table { width: 100%; border-collapse: collapse; margin-bottom: 16px; font-size: 0.88rem; }
+    .chars-table td { padding: 7px 10px; border-bottom: 1px solid #2a2830; color: #ccc; vertical-align: top; }
+    .chars-table td:first-child { color: #FBBF24; font-weight: 600; width: 42%; }
+    .pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 14px; }
+    .pros, .cons { background: #1e1c27; border-radius: 8px; padding: 14px 16px; }
+    .pros h4 { color: #4ade80; }
+    .cons h4 { color: #f87171; }
+    .pros ul, .cons ul { padding-left: 18px; }
+    .pros ul li, .cons ul li { color: #ccc; font-size: 0.9rem; margin-bottom: 6px; }
+    .review-cta { margin-top: 16px; }
+    @media (max-width: 600px) { .pros-cons { grid-template-columns: 1fr; } }
+ 
+    .table-wrap { overflow-x: auto; margin-bottom: 28px; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    table th { background: #1e1c27; color: #FBBF24; padding: 12px 14px; text-align: left; border-bottom: 2px solid #FBBF24; white-space: nowrap; }
+    table td { padding: 11px 14px; border-bottom: 1px solid #2a2830; color: #ccc; vertical-align: top; }
+    table tr:hover td { background: #16141C; }
+    .check { color: #4ade80; }
+    .cross { color: #f87171; }
+ 
+    .speed-bar-wrap { background: #1e1c27; border-radius: 6px; height: 10px; width: 100%; min-width: 80px; }
+    .speed-bar { height: 10px; border-radius: 6px; background: #FBBF24; }
+ 
+    .firmware-card { background: #16141C; border: 1px solid #2a2830; border-radius: 10px; padding: 18px 22px; margin-bottom: 14px; display: flex; align-items: flex-start; gap: 16px; }
+    .firmware-card .fw-icon { font-size: 1.6rem; flex-shrink: 0; }
+    .firmware-card .fw-body h4 { color: #fff; margin-bottom: 4px; }
+    .firmware-card .fw-body p { margin-bottom: 0; font-size: 0.9rem; }
+    .firmware-card .fw-body a { font-size: 0.88rem; }
+ 
+    .pros-cons-section { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 24px 0; }
+    .pros-box, .cons-box { background: #16141C; border: 1px solid #2a2830; border-radius: 12px; padding: 22px; }
+    .pros-box h3 { color: #4ade80; margin-top: 0; }
+    .cons-box h3 { color: #f87171; margin-top: 0; }
+    .pros-box ul, .cons-box ul { padding-left: 20px; }
+    .pros-box ul li, .cons-box ul li { color: #ccc; margin-bottom: 10px; }
+    @media (max-width: 640px) { .pros-cons-section { grid-template-columns: 1fr; } }
+ 
+    .faq-item { background: #16141C; border: 1px solid #2a2830; border-radius: 10px; padding: 20px 22px; margin-bottom: 16px; }
+    .faq-item h3 { margin-top: 0; color: #FBBF24; font-size: 1rem; }
+    .faq-item p { margin-bottom: 0; }
+ 
+    footer { background: #0d0c14; border-top: 1px solid #2a2830; margin-top: 80px; padding: 48px 0 20px; }
+    .footer-inner { max-width: 1100px; margin: 0 auto; padding: 0 20px; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 32px; }
+    .footer-col h4 { color: #FBBF24; font-size: 0.9rem; margin-bottom: 12px; }
+    .footer-col ul { list-style: none; }
+    .footer-col ul li { margin-bottom: 8px; }
+    .footer-col ul li a { color: #888; font-size: 0.85rem; }
+    .footer-col ul li a:hover { color: #FBBF24; }
+    .footer-brand p { color: #555; font-size: 0.85rem; margin-bottom: 8px; }
+    .footer-brand a { color: #888; font-size: 0.85rem; }
+    .footer-bottom { max-width: 1100px; margin: 32px auto 0; padding: 16px 20px 0; border-top: 1px solid #1e1c27; text-align: center; color: #444; font-size: 0.82rem; }
+    @media (max-width: 800px) { .footer-inner { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 480px) { .footer-inner { grid-template-columns: 1fr; } }
+ 
+    #sticky-cta { position: fixed; bottom: 0; left: 0; right: 0; background: #111018; border-top: 2px solid #22c55e; padding: 10px 20px; display: flex; align-items: center; gap: 14px; z-index: 200; transform: translateY(100%); transition: transform 0.3s; }
+    #sticky-cta.visible { transform: translateY(0); }
+    .sticky-cta-text { flex: 1; font-size: 0.9rem; color: #ccc; }
+    .sticky-cta-text .mobile-text { display: none; }
+    .sticky-cta-text .desktop-text { display: inline; }
+    .sticky-cta-btn { background: #22c55e; color: #000; font-weight: 700; padding: 8px 20px; border-radius: 6px; font-size: 0.9rem; white-space: nowrap; }
+    .sticky-cta-btn:hover { background: #16a34a; text-decoration: none; color: #000; }
+    .sticky-cta-close { background: none; border: none; color: #ccc; font-size: 1.1rem; cursor: pointer; padding: 2px 6px; border-radius: 4px; line-height: 1; flex-shrink: 0; }
+    .sticky-cta-close:hover { color: #fff; }
+ 
+    .burger { display: none; flex-direction: column; justify-content: space-between; width: 28px; height: 20px; cursor: pointer; background: none; border: none; padding: 0; }
+    .burger span { display: block; width: 100%; height: 3px; background: #FBBF24; border-radius: 2px; transition: all 0.3s; }
+    .burger.open span:nth-child(1) { transform: translateY(8.5px) rotate(45deg); }
+    .burger.open span:nth-child(2) { opacity: 0; }
+    .burger.open span:nth-child(3) { transform: translateY(-8.5px) rotate(-45deg); }
+ 
+    @media (max-width: 700px) {
+      nav { display: none; }
+      nav.open { display: block; position: absolute; top: 100%; left: 0; right: 0; background: #111018; padding: 12px 20px; border-bottom: 2px solid #FBBF24; z-index: 99; }
+      nav.open ul { display: flex; flex-direction: column; gap: 4px; }
+      nav.open ul li a { font-size: 0.9rem; padding: 6px 10px; display: block; }
+      .burger { display: flex; margin-left: auto; }
+      .tl-right { align-items: flex-start; }
+      header { position: sticky; top: 0; z-index: 100; }
+      .sticky-cta-text .mobile-text { display: inline; }
+      .sticky-cta-text .desktop-text { display: none; }
+    }
+  </style>
+</head>
+<body>
+ 
+<header>
+  <div class="header-inner">
+    <a class="logo" href="/">
+      <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17 2L4 8v9c0 8.3 5.6 16 13 18 7.4-2 13-9.7 13-18V8L17 2z" fill="#FBBF24" opacity="0.15"/>
+        <path d="M17 2L4 8v9c0 8.3 5.6 16 13 18 7.4-2 13-9.7 13-18V8L17 2z" stroke="#FBBF24" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M12 17l3.5 3.5L22 13" stroke="#FBBF24" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Рабочие VPN
+    </a>
+    <button class="burger" id="burger-btn" aria-label="Меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="/">Главная</a></li>
+        <li><a href="#kak-vybrat">Как выбирать</a></li>
+        <li><a href="#rating">Рейтинг</a></li>
+        <li><a href="#sravnenie">Сравнение</a></li>
+        <li><a href="#ustanovka">Установка</a></li>
+        <li><a href="#proshivka">Прошивка</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+ 
+<main>
+ 
+  <!-- HERO -->
+  <section class="hero">
+    <h1>VPN для роутера в России 2026: Keenetic, ASUS, TP-Link, Xiaomi</h1>
+    <div class="updated-wrap"><span class="updated">✅ Обновлено: апрель 2026</span></div>
+    <p>VPN на роутере защищает сразу все устройства в доме: телевизор, смартфоны, ноутбуки, Smart TV и игровые приставки, без установки приложений на каждое из них. Вы настраиваете VPN для роутера один раз, и весь домашний трафик автоматически проходит через зашифрованный туннель, обходя замедления ТСПУ на YouTube, Telegram и других заблокированных ресурсах. Мы протестировали пять лучших VPN-сервисов на роутерах Keenetic, ASUS, TP-Link и Xiaomi, проверили совместимость протоколов с российскими провайдерами и составили пошаговые инструкции для каждой модели.</p>
+  </section>
+  
+    <!-- TOPLIST -->
+  <h2 id="rating">Лучший VPN для роутера в России 2026: рейтинг</h2>
+  <p>Все сервисы протестированы в апреле 2026 года на роутерах Keenetic Ultra, ASUS RT-AX88U и TP-Link Archer с OpenWRT. Скорость замерялась на серверах в Финляндии через МТС с базовой скоростью 200 Мбит/с.</p>
+ 
+  <div class="toplist">
+ 
+    <div class="toplist-item top1">
+      <div class="tl-rank">1</div>
+      <div class="tl-info">
+        <div class="tl-name">ZoogVPN</div>
+        <span class="tl-badge" style="background:#3B82F6;color:#fff;">Выбор редакции</span>
+        <div class="tl-desc">Лучший VPN для роутера Keenetic в России. Готовые инструкции для DD-WRT, Tomato, ASUS и Keenetic без перепрошивки. ZoogShadowing обходит ТСПУ на всех операторах. Безлимитные устройства.</div>
+        <div class="tl-usps">🛣️ Keenetic, DD-WRT, ASUS, Tomato &nbsp;🔐 ZoogShadowing &nbsp;∞ Безлимит устройств &nbsp;🌍 100+ стран &nbsp;🆓 10 ГБ бесплатно &nbsp;💳 Оплата из РФ</div>
+        <div class="tl-reviews">★★★★★ 4.7 <span style="color:#666;">(2 140 отзывов, Trustpilot)</span></div>
+      </div>
+      <div class="tl-right">
+        <div class="tl-rating">⭐ 9.5/10</div>
+        <a class="btn" href="https://zoogsvp.online/ru-ru/best-vpn-offer-for-russia/?utm_source=zoog_affiliate&utm_medium=revshare&utm_campaign=aff664229459a657&a_aid=664229459a657" target="_blank" rel="nofollow noopener">Попробовать →</a>
+      </div>
+    </div>
+ 
+    <div class="toplist-item">
+      <div class="tl-rank">2</div>
+      <div class="tl-info">
+        <div class="tl-name">BlancVPN</div>
+        <span class="tl-badge" style="background:#F97316;color:#fff;">Самый быстрый</span>
+        <div class="tl-desc">Outline (Shadowsocks) до 2 Гбит/с, минимальный пинг 35 мс. Конфигурационные файлы для роутеров Keenetic и OpenWRT. Рекордная скорость для 4K на всех устройствах сети.</div>
+        <div class="tl-usps">🚀 2 Гбит/с &nbsp;🛣️ Keenetic, OpenWRT &nbsp;🔐 Outline &nbsp;🇷🇺 Русский язык &nbsp;💳 Оплата МИР &nbsp;✅ 30 дней возврат</div>
+        <div class="tl-reviews">★★★★★ 4.7 <span style="color:#666;">(986 отзывов, Trustpilot)</span></div>
+      </div>
+      <div class="tl-right">
+        <div class="tl-rating">⭐ 9.3/10</div>
+        <a class="btn" href="https://getblancvpn.com/ru/?ref=vpnscanner" target="_blank" rel="nofollow noopener">Попробовать →</a>
+      </div>
+    </div>
+ 
+    <div class="toplist-item">
+      <div class="tl-rank">3</div>
+      <div class="tl-info">
+        <div class="tl-name">Trust.Zone</div>
+        <span class="tl-badge" style="background:#10B981;color:#fff;">Обфускация</span>
+        <div class="tl-desc">VLESS+Reality и AmneziaWG на роутере OpenWRT и Keenetic. Максимальная устойчивость к ТСПУ при усиленных блокировках. Подробные инструкции и пробный период.</div>
+        <div class="tl-usps">🔐 VLESS+Reality &nbsp;🔒 AmneziaWG &nbsp;🛣️ OpenWRT, Keenetic, DD-WRT &nbsp;🌍 93 страны &nbsp;💳 Оплата из РФ &nbsp;⏱️ Пробно 3 дня</div>
+        <div class="tl-reviews">★★★★☆ 4.4 <span style="color:#666;">(612 отзывов, Trustpilot)</span></div>
+      </div>
+      <div class="tl-right">
+        <div class="tl-rating">⭐ 9.1/10</div>
+        <a class="btn" href="https://vpntotrust.site/r.php?RID=B-8Ebfw-MDAxNzQwNTgxMTk2" target="_blank" rel="nofollow noopener">Попробовать →</a>
+      </div>
+    </div>
+ 
+    <div class="toplist-item">
+      <div class="tl-rank">4</div>
+      <div class="tl-info">
+        <div class="tl-name">AdGuard VPN</div>
+        <span class="tl-badge" style="background:#8B5CF6;color:#fff;">Максимальная скорость</span>
+        <div class="tl-desc">TrustTunnel (QUIC) показал 118 Мбит/с в тесте. Встроенный блокировщик рекламы защищает все устройства сети. Оплата из России, 3 ГБ бесплатно для тестирования на роутере.</div>
+        <div class="tl-usps">⚡ 118 Мбит/с &nbsp;🔐 QUIC/TrustTunnel &nbsp;🚫 Блокировка рекламы &nbsp;🛣️ Через браузерный прокси &nbsp;🆓 3 ГБ бесплатно &nbsp;💳 Оплата из РФ</div>
+        <div class="tl-reviews">★★★★★ 4.6 <span style="color:#666;">(3 870 отзывов, Play Market)</span></div>
+      </div>
+      <div class="tl-right">
+        <div class="tl-rating">⭐ 9.0/10</div>
+        <a class="btn" href="https://awxugoldha.execute-api.eu-north-1.amazonaws.com/" target="_blank" rel="nofollow noopener">Попробовать →</a>
+      </div>
+    </div>
+ 
+    <div class="toplist-item">
+      <div class="tl-rank">5</div>
+      <div class="tl-info">
+        <div class="tl-name">Planet VPN</div>
+        <span class="tl-badge" style="background:#6366F1;color:#fff;">Лучший бесплатный</span>
+        <div class="tl-desc">Бесплатный план без ограничений трафика. WireGuard-конфигурация совместима с Keenetic и большинством роутеров. Подходит для базовой защиты сети без затрат.</div>
+        <div class="tl-usps">🆓 Бесплатный без лимита &nbsp;🔐 WireGuard &nbsp;🛣️ Keenetic, OpenWRT &nbsp;🌍 60+ стран &nbsp;🔌 Chrome-расширение</div>
+        <div class="tl-reviews">★★★★☆ 4.2 <span style="color:#666;">(748 отзывов, Play Market)</span></div>
+      </div>
+      <div class="tl-right">
+        <div class="tl-rating">⭐ 8.6/10</div>
+        <a class="btn" href="https://freevpnplanet.short.gy/1100" target="_blank" rel="nofollow noopener">Попробовать →</a>
+      </div>
+    </div>
+ 
+  </div>
+ 
+  <!-- КАК ВЫБИРАТЬ -->
+  <section id="kak-vybrat">
+    <h2>Как выбрать лучший VPN для роутера в России</h2>
+    <p>Выбор VPN для роутера отличается от выбора для смартфона или ПК. Роутер шифрует весь трафик сети и работает непрерывно, поэтому требования к протоколу и производительности VPN-сервера строже.</p>
+    <ul class="content-list">
+      <li><strong>Совместимость с прошивкой роутера.</strong> Keenetic, DD-WRT, OpenWRT, ASUS Merlin и Tomato поддерживают разные протоколы. Убедитесь, что выбранный VPN предоставляет конфигурационные файлы и инструкции для вашей прошивки.</li>
+      <li><strong>Протоколы с обфускацией.</strong> Стандартный WireGuard или OpenVPN без маскировки трафика замедляется ТСПУ. На роутере это означает, что все устройства в сети будут работать медленно. Нужны протоколы ZoogShadowing, Outline (Shadowsocks), VLESS или AmneziaWG.</li>
+      <li><strong>Высокая скорость серверов.</strong> Роутер шифрует трафик для всех устройств одновременно: несколько смартфонов, ноутбук, Smart TV. Для комфортной работы нужно не менее 50–80 Мбит/с на европейских серверах.</li>
+      <li><strong>Количество одновременных подключений.</strong> Некоторые провайдеры ограничивают число устройств на одном аккаунте. Через роутер подключается вся сеть, поэтому выбирайте тарифы с безлимитным числом устройств.</li>
+      <li><strong>Надёжная техподдержка с инструкциями для роутеров.</strong> Настройка VPN на роутере сложнее, чем установка приложения. Провайдеры с детальными инструкциями и живой поддержкой значительно упрощают процесс.</li>
+      <li><strong>Оплата из России.</strong> Проверяйте поддержку МИР, СБП, YooMoney или криптовалюты.</li>
+    </ul>
+    <div class="pro-tip">💡 <strong>Важно:</strong> не все роутеры поддерживают VPN-клиент из коробки. Бюджетные модели TP-Link и Xiaomi часто требуют перепрошивки на OpenWRT. Keenetic поддерживает WireGuard и OpenVPN без перепрошивки через установку компонентов в интерфейсе.</div>
+  </section>
+ 
+  <!-- ОБЗОРЫ -->
+  <section id="obzory">
+    <h2>Обзоры VPN для роутера: совместимость и скорость</h2>
+    <p>Тесты проводились в апреле 2026 года. Скорость замерялась через speedtest.net до сервера в Финляндии. Совместимость проверялась на Keenetic Ultra (3.0), ASUS RT-AX88U (Merlin 388.x) и TP-Link Archer C7 (OpenWRT 23.x).</p>
+ 
+    <div class="review-card" id="review-zoog">
+      <h3>1. ZoogVPN</h3>
+      <div class="review-meta">
+        <span class="review-tag">Выбор редакции</span>
+        <span class="review-tag">9.5/10</span>
+        <span class="review-tag">Keenetic без перепрошивки</span>
+        <span class="review-tag">DD-WRT, Tomato, ASUS</span>
+      </div>
+      <p>ZoogVPN предлагает наиболее полную поддержку роутеров среди всех протестированных сервисов. Настройка на Keenetic выполняется через встроенный интерфейс без перепрошивки: достаточно установить компонент OpenVPN или WireGuard и загрузить конфигурационный файл. Технология ZoogShadowing обходит ТСПУ на всех четырёх крупных операторах. На роутере ASUS с прошивкой Merlin показал 95 Мбит/с при пинге 38 мс. Безлимитное число устройств позволяет подключить через роутер всю домашнюю сеть без ограничений.</p>
+      <table class="chars-table">
+        <tr><td>Скорость (Финляндия)</td><td>95 Мбит/с</td></tr>
+        <tr><td>Пинг (Финляндия)</td><td>38 мс</td></tr>
+        <tr><td>Совместимые роутеры</td><td>Keenetic, DD-WRT, Tomato, ASUS Merlin, OpenWRT</td></tr>
+        <tr><td>Протоколы на роутере</td><td>ZoogShadowing, OpenVPN, WireGuard, IKEv2</td></tr>
+        <tr><td>Число устройств</td><td>Безлимитное</td></tr>
+        <tr><td>Оплата</td><td>Карты РФ, SberPay, МИР, YooMoney, криптовалюта</td></tr>
+        <tr><td>Цена</td><td>от $1.99/мес; бесплатно 10 ГБ/мес</td></tr>
+      </table>
+      <div class="pros-cons">
+        <div class="pros">
+          <h4>✅ Плюсы</h4>
+          <ul>
+            <li>Настройка на Keenetic без перепрошивки</li>
+            <li>Инструкции для DD-WRT, Tomato, ASUS, OpenWRT</li>
+            <li>ZoogShadowing обходит ТСПУ на всех операторах</li>
+            <li>Безлимитное число устройств в сети</li>
+            <li>Бесплатно 10 ГБ/мес для теста</li>
+            <li>Оплата картами из России</li>
+          </ul>
+        </div>
+        <div class="cons">
+          <h4>❌ Минусы</h4>
+          <ul>
+            <li>ZoogShadowing доступен не на всех прошивках напрямую</li>
+            <li>Бесплатный план ограничен 3 серверами</li>
+          </ul>
+        </div>
+      </div>
+      <div class="review-cta">
+        <a class="btn" href="https://zoogsvp.online/ru-ru/best-vpn-offer-for-russia/?utm_source=zoog_affiliate&utm_medium=revshare&utm_campaign=aff664229459a657&a_aid=664229459a657" target="_blank" rel="nofollow noopener">Перейти на ZoogVPN →</a>
+      </div>
+    </div>
+ 
+    <div class="review-card" id="review-blanc">
+      <h3>2. BlancVPN</h3>
+      <div class="review-meta">
+        <span class="review-tag">Самый быстрый</span>
+        <span class="review-tag">9.3/10</span>
+        <span class="review-tag">Outline 2 Гбит/с</span>
+        <span class="review-tag">Keenetic, OpenWRT</span>
+      </div>
+      <p>BlancVPN показал рекордную скорость 112 Мбит/с при установке через конфигурационный файл Outline на Keenetic. Протокол Outline (Shadowsocks) не имеет видимой сигнатуры для ТСПУ: весь трафик домашней сети проходит как обычный зашифрованный HTTPS. Русскоязычная поддержка в Telegram помогает с настройкой на роутере шаг за шагом.</p>
+      <table class="chars-table">
+        <tr><td>Скорость (Финляндия)</td><td>112 Мбит/с</td></tr>
+        <tr><td>Пинг (Финляндия)</td><td>35 мс</td></tr>
+        <tr><td>Совместимые роутеры</td><td>Keenetic, OpenWRT, DD-WRT (через конфиг)</td></tr>
+        <tr><td>Протоколы на роутере</td><td>Outline (Shadowsocks), V2Ray, WireGuard</td></tr>
+        <tr><td>Число устройств</td><td>Безлимитное</td></tr>
+        <tr><td>Оплата</td><td>МИР, T Pay, YooMoney, СБП, криптовалюта</td></tr>
+        <tr><td>Цена</td><td>от 149 руб/мес; 30 дней гарантия возврата</td></tr>
+      </table>
+      <div class="pros-cons">
+        <div class="pros">
+          <h4>✅ Плюсы</h4>
+          <ul>
+            <li>Рекордная скорость 112 Мбит/с на роутере</li>
+            <li>Outline не определяется ТСПУ</li>
+            <li>Оплата МИР и СБП</li>
+            <li>Русскоязычная поддержка при настройке</li>
+            <li>30 дней гарантия возврата</li>
+          </ul>
+        </div>
+        <div class="cons">
+          <h4>❌ Минусы</h4>
+          <ul>
+            <li>Нет готовых инструкций для всех прошивок</li>
+            <li>Нет бесплатного постоянного плана</li>
+          </ul>
+        </div>
+      </div>
+      <div class="review-cta">
+        <a class="btn" href="https://getblancvpn.com/ru/?ref=vpnscanner" target="_blank" rel="nofollow noopener">Перейти на BlancVPN →</a>
+      </div>
+    </div>
+ 
+    <div class="review-card" id="review-trust">
+      <h3>3. Trust.Zone</h3>
+      <div class="review-meta">
+        <span class="review-tag">Обфускация</span>
+        <span class="review-tag">9.1/10</span>
+        <span class="review-tag">VLESS+Reality</span>
+        <span class="review-tag">OpenWRT, Keenetic</span>
+      </div>
+      <p>Trust.Zone предоставляет подробные инструкции по настройке VLESS+Reality и AmneziaWG на роутерах с OpenWRT и Keenetic с Entware. Эти протоколы обеспечивают максимальную устойчивость к DPI при усиленных волнах блокировок. На роутере TP-Link с OpenWRT показал 88 Мбит/с при пинге 46 мс. Это одна из самых низких цен в рейтинге при отличной поддержке роутеров.</p>
+      <table class="chars-table">
+        <tr><td>Скорость (Нидерланды)</td><td>88 Мбит/с</td></tr>
+        <tr><td>Пинг (Нидерланды)</td><td>46 мс</td></tr>
+        <tr><td>Совместимые роутеры</td><td>OpenWRT, Keenetic, DD-WRT, Mikrotik</td></tr>
+        <tr><td>Протоколы на роутере</td><td>VLESS+Reality, AmneziaWG, WireGuard, OpenVPN</td></tr>
+        <tr><td>Число устройств</td><td>До 5 (зависит от тарифа)</td></tr>
+        <tr><td>Оплата</td><td>Карты РФ, СБП, МИР, криптовалюта</td></tr>
+        <tr><td>Цена</td><td>от $1.77/мес; пробно 3 дня</td></tr>
+      </table>
+      <div class="pros-cons">
+        <div class="pros">
+          <h4>✅ Плюсы</h4>
+          <ul>
+            <li>VLESS+Reality, лучший протокол для роутеров в РФ</li>
+            <li>AmneziaWG через Entware на Keenetic</li>
+            <li>Инструкции для OpenWRT и Mikrotik</li>
+            <li>Самая низкая цена в рейтинге</li>
+          </ul>
+        </div>
+        <div class="cons">
+          <h4>❌ Минусы</h4>
+          <ul>
+            <li>Ограниченное число устройств на базовом тарифе</li>
+            <li>Интерфейс только на английском</li>
+          </ul>
+        </div>
+      </div>
+      <div class="review-cta">
+        <a class="btn" href="https://vpntotrust.site/r.php?RID=B-8Ebfw-MDAxNzQwNTgxMTk2" target="_blank" rel="nofollow noopener">Перейти на Trust.Zone →</a>
+      </div>
+    </div>
+ 
+    <div class="review-card" id="review-adguard">
+      <h3>4. AdGuard VPN</h3>
+      <div class="review-meta">
+        <span class="review-tag">Максимальная скорость</span>
+        <span class="review-tag">9.0/10</span>
+        <span class="review-tag">118 Мбит/с</span>
+      </div>
+      <p>AdGuard VPN показал максимальную скорость в тесте: 118 Мбит/с при пинге 42 мс на финском сервере. Протокол TrustTunnel на базе QUIC маскирует трафик под обычный HTTPS и не определяется DPI. AdGuard VPN не поддерживает прямую установку на роутер через конфигурационный файл, однако отлично работает в паре с роутером через браузерное расширение или приложения на устройствах в сети. Встроенный блокировщик рекламы защищает все устройства домашней сети одновременно.</p>
+      <table class="chars-table">
+        <tr><td>Скорость (Финляндия)</td><td>118 Мбит/с</td></tr>
+        <tr><td>Пинг (Финляндия)</td><td>42 мс</td></tr>
+        <tr><td>Установка на роутер</td><td>Через приложения на устройствах в сети</td></tr>
+        <tr><td>Протоколы</td><td>TrustTunnel (QUIC/HTTP2), WireGuard</td></tr>
+        <tr><td>Число устройств</td><td>До 10</td></tr>
+        <tr><td>Оплата</td><td>МИР, Visa, Bitcoin, YooMoney</td></tr>
+        <tr><td>Цена</td><td>Бесплатно 3 ГБ/мес; от 247 руб/мес</td></tr>
+      </table>
+      <div class="pros-cons">
+        <div class="pros">
+          <h4>✅ Плюсы</h4>
+          <ul>
+            <li>Максимальная скорость 118 Мбит/с</li>
+            <li>TrustTunnel (QUIC) не определяется ТСПУ</li>
+            <li>Встроенный блокировщик рекламы для всей сети</li>
+            <li>3 ГБ бесплатно для тестирования</li>
+            <li>Оплата картами РФ</li>
+          </ul>
+        </div>
+        <div class="cons">
+          <h4>❌ Минусы</h4>
+          <ul>
+            <li>Нет прямой установки конфига на роутер</li>
+            <li>Требует приложений на каждом устройстве</li>
+          </ul>
+        </div>
+      </div>
+      <div class="review-cta">
+        <a class="btn" href="https://awxugoldha.execute-api.eu-north-1.amazonaws.com/" target="_blank" rel="nofollow noopener">Перейти на AdGuard VPN →</a>
+      </div>
+    </div>
+ 
+    <div class="review-card" id="review-planet">
+      <h3>5. Planet VPN</h3>
+      <div class="review-meta">
+        <span class="review-tag">Лучший бесплатный</span>
+        <span class="review-tag">8.6/10</span>
+        <span class="review-tag">WireGuard</span>
+        <span class="review-tag">Без лимита трафика</span>
+      </div>
+      <p>Planet VPN выделяется щедрым бесплатным планом: неограниченный трафик на 5 серверах без регистрации карты. WireGuard-конфигурация совместима с Keenetic и большинством роутеров. На Keenetic Ultra показал 65 Мбит/с при пинге 70 мс. Это достаточно для YouTube в 1080p и Telegram на нескольких устройствах. Купить VPN для роутера с нулевым бюджетом на старте, Planet VPN наиболее разумный выбор.</p>
+      <table class="chars-table">
+        <tr><td>Скорость (Европа, платный)</td><td>65 Мбит/с</td></tr>
+        <tr><td>Пинг (Европа)</td><td>70 мс</td></tr>
+        <tr><td>Совместимые роутеры</td><td>Keenetic, OpenWRT (через WireGuard-конфиг)</td></tr>
+        <tr><td>Протоколы на роутере</td><td>WireGuard, IKEv2, OpenVPN</td></tr>
+        <tr><td>Число устройств</td><td>Безлимитное</td></tr>
+        <tr><td>Оплата</td><td>Карты, PayPal, криптовалюта</td></tr>
+        <tr><td>Цена</td><td>Бесплатно; от $3.99/мес платный</td></tr>
+      </table>
+      <div class="pros-cons">
+        <div class="pros">
+          <h4>✅ Плюсы</h4>
+          <ul>
+            <li>Бесплатный план без лимита трафика</li>
+            <li>WireGuard-конфиг для Keenetic</li>
+            <li>Безлимитное число устройств в сети</li>
+            <li>Не нужно вводить данные карты</li>
+          </ul>
+        </div>
+        <div class="cons">
+          <h4>❌ Минусы</h4>
+          <ul>
+            <li>WireGuard без обфускации замедляется ТСПУ</li>
+            <li>4K нестабильно на бесплатном плане</li>
+            <li>Бесплатный план: только 5 локаций</li>
+          </ul>
+        </div>
+      </div>
+      <div class="review-cta">
+        <a class="btn" href="https://freevpnplanet.short.gy/1100" target="_blank" rel="nofollow noopener">Перейти на Planet VPN →</a>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- СРАВНЕНИЕ -->
+  <section id="sravnenie">
+    <h2>Сравнительная таблица VPN для роутера: скорость и совместимость</h2>
+    <p>Замеры выполнены на серверах в Финляндии через МТС. Колонки «Keenetic», «DD-WRT» и «OpenWRT» показывают наличие официальных инструкций или подтверждённую совместимость.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>VPN</th>
+            <th>Скорость</th>
+            <th>Пинг</th>
+            <th>Скорость (визуально)</th>
+            <th>Keenetic</th>
+            <th>DD-WRT</th>
+            <th>OpenWRT</th>
+            <th>Обфускация</th>
+            <th>Устройства</th>
+            <th>Цена/мес</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>ZoogVPN</strong></td>
+            <td>95 Мбит/с</td>
+            <td>38 мс</td>
+            <td><div class="speed-bar-wrap"><div class="speed-bar" style="width:85%"></div></div></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+            <td>ZoogShadowing</td>
+            <td>∞</td>
+            <td>от $1.99</td>
+          </tr>
+          <tr>
+            <td><strong>BlancVPN</strong></td>
+            <td>112 Мбит/с</td>
+            <td>35 мс</td>
+            <td><div class="speed-bar-wrap"><div class="speed-bar" style="width:100%"></div></div></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+            <td>Outline</td>
+            <td>∞</td>
+            <td>от 149 руб</td>
+          </tr>
+          <tr>
+            <td><strong>Trust.Zone</strong></td>
+            <td>88 Мбит/с</td>
+            <td>46 мс</td>
+            <td><div class="speed-bar-wrap"><div class="speed-bar" style="width:79%"></div></div></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+            <td>VLESS+Reality</td>
+            <td>До 5</td>
+            <td>от $1.77</td>
+          </tr>
+          <tr>
+            <td><strong>AdGuard VPN</strong></td>
+            <td>118 Мбит/с</td>
+            <td>42 мс</td>
+            <td><div class="speed-bar-wrap"><div class="speed-bar" style="width:100%; background:#10B981;"></div></div></td>
+            <td><span class="cross">✗</span></td>
+            <td><span class="cross">✗</span></td>
+            <td><span class="cross">✗</span></td>
+            <td>TrustTunnel</td>
+            <td>До 10</td>
+            <td>от 247 руб</td>
+          </tr>
+          <tr>
+            <td><strong>Planet VPN</strong></td>
+            <td>65 Мбит/с</td>
+            <td>70 мс</td>
+            <td><div class="speed-bar-wrap"><div class="speed-bar" style="width:58%"></div></div></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="cross">✗</span></td>
+            <td><span class="check">✓</span></td>
+            <td>Нет</td>
+            <td>∞</td>
+            <td>Бесплатно</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+ 
+  <!-- УСТАНОВКА -->
+  <section id="ustanovka">
+    <h2>Как установить VPN на роутер</h2>
+    <p>Способ установки зависит от модели роутера и его прошивки. Ниже пошаговые инструкции для самых популярных в России роутеров. Во всех случаях сначала создайте аккаунт у VPN-провайдера и скачайте конфигурационный файл из личного кабинета. Выбирайте сервер в Финляндии или Нидерландах: пинг 35–55 мс из России оптимален для потокового видео и звонков.</p>
+ 
+    <h3>VPN для роутера Keenetic</h3>
+    <p>Keenetic, наиболее удобный роутер для VPN в России: поддержка WireGuard и OpenVPN встроена в прошивку и активируется через установку компонентов без перепрошивки. С пакетом Entware также доступны AmneziaWG и VLESS.</p>
+    <ol class="steps-list">
+      <li><strong>Откройте веб-интерфейс Keenetic</strong> по адресу 192.168.1.1 и перейдите в «Общие настройки → Изменить набор компонентов».</li>
+      <li><strong>Установите компонент</strong> «Клиент WireGuard» или «Клиент OpenVPN» в зависимости от протокола вашего VPN-провайдера. Нажмите «Установить» и дождитесь перезагрузки.</li>
+      <li><strong>Перейдите в «Другие подключения → WireGuard»</strong> (или OpenVPN). Нажмите «Добавить подключение».</li>
+      <li><strong>Загрузите конфигурационный файл</strong> (.conf для WireGuard или .ovpn для OpenVPN), скачанный из личного кабинета VPN-провайдера.</li>
+      <li><strong>Включите подключение</strong> и проверьте статус: индикатор должен стать зелёным. Перейдите на сайт ipleak.net с любого устройства в сети и убедитесь, что отображается зарубежный IP.</li>
+      <li><strong>Настройте раздельное туннелирование</strong> (если нужно): в Keenetic можно направить через VPN только отдельные устройства или домены, оставив остальной трафик на прямом соединении.</li>
+    </ol>
+    <div class="pro-tip">💡 <strong>Совет для Keenetic:</strong> для обхода ТСПУ используйте WireGuard с конфигурацией ZoogVPN или BlancVPN на протоколе Outline. Если при обычном WireGuard скорость низкая, это признак того, что ТСПУ замедляет сам протокол. Установите Entware и добавьте поддержку AmneziaWG для максимальной защиты.</div>
+ 
+    <h3>VPN для роутера Xiaomi</h3>
+    <p>Большинство роутеров Xiaomi (Mi Router, AX серия) работают на прошивке MiWifi, которая имеет базовую поддержку VPN-клиента через раздел настроек. Более функциональный вариант, перепрошивка на OpenWRT.</p>
+    <ol class="steps-list">
+      <li><strong>Войдите в веб-интерфейс</strong> роутера Xiaomi по адресу 192.168.31.1. Перейдите в «Расширенные настройки → VPN».</li>
+      <li><strong>Если в прошивке MiWifi есть раздел VPN</strong>, выберите протокол OpenVPN и загрузите .ovpn-файл с сайта провайдера. Введите логин и пароль аккаунта.</li>
+      <li><strong>Если VPN-клиента в MiWifi нет</strong>, установите прошивку OpenWRT: скачайте подходящий образ для вашей модели с официального сайта openwrt.org, загрузите через раздел «Обновление прошивки» в интерфейсе роутера.</li>
+      <li><strong>После установки OpenWRT</strong> откройте LuCI (веб-интерфейс OpenWRT), перейдите в «VPN → WireGuard» или установите пакет openvpn-openssl через «Система → Программное обеспечение».</li>
+      <li><strong>Загрузите конфигурацию</strong> и включите VPN-подключение.</li>
+    </ol>
+    <div class="pro-tip">💡 <strong>Совет для Xiaomi:</strong> перед перепрошивкой убедитесь, что для вашей модели есть стабильный образ OpenWRT на openwrt.org. Прошивка несовместимых моделей может привести к неработоспособности роутера.</div>
+ 
+    <h3>Установка на роутер ASUS</h3>
+    <p>Роутеры ASUS поддерживают VPN-клиент из коробки в стандартной прошивке AsusWRT, а прошивка Merlin от сообщества расширяет возможности поддержкой WireGuard и продвинутых скриптов.</p>
+    <ol class="steps-list">
+      <li><strong>Откройте интерфейс ASUS</strong> по адресу 192.168.1.1 и перейдите в «VPN → VPN Client».</li>
+      <li><strong>Нажмите «Добавить профиль»</strong> и выберите тип VPN: OpenVPN или WireGuard (WireGuard доступен начиная с прошивки AsusWRT 386.x или Merlin).</li>
+      <li><strong>Загрузите конфигурационный файл</strong> с сайта вашего VPN-провайдера. ZoogVPN и Trust.Zone предоставляют готовые .ovpn и .conf файлы с инструкциями специально для ASUS.</li>
+      <li><strong>Для использования Merlin</strong> скачайте прошивку с сайта asuswrt-merlin.net, перейдите в «Администрирование → Обновление прошивки» и загрузите файл. После перезагрузки откроются расширенные настройки VPN.</li>
+      <li><strong>Активируйте подключение</strong> и проверьте статус в «VPN Client → Connect».</li>
+    </ol>
+ 
+    <h3>Установка на TP-Link</h3>
+    <p>Роутеры TP-Link серий Archer и TL-WR поддерживают OpenVPN и PPTP в стандартной прошивке. Для WireGuard и продвинутых протоколов потребуется OpenWRT.</p>
+    <ol class="steps-list">
+      <li><strong>Войдите в интерфейс TP-Link</strong> по адресу 192.168.0.1. Перейдите в «Дополнительно → VPN Server/Client».</li>
+      <li><strong>Выберите «OpenVPN Client»</strong>, введите адрес сервера, логин и пароль, загрузите .ovpn-файл с сайта провайдера.</li>
+      <li><strong>Для WireGuard и продвинутых протоколов</strong> установите OpenWRT: скачайте образ для вашей модели на openwrt.org, загрузите через «Системные инструменты → Обновление прошивки».</li>
+      <li><strong>На OpenWRT</strong> установите пакет luci-app-wireguard через «Система → Программное обеспечение» и настройте WireGuard через интерфейс LuCI.</li>
+      <li><strong>Для AmneziaWG на OpenWRT</strong> потребуется ручная установка через командную строку: инструкции доступны на официальном сайте Amnezia.</li>
+    </ol>
+    <div class="pro-tip">💡 <strong>Совет для TP-Link:</strong> стандартный OpenVPN на TP-Link без обфускации может замедляться ТСПУ. Для надёжного обхода блокировок перепрошейте на OpenWRT и используйте WireGuard с конфигурацией ZoogVPN или AmneziaWG от Trust.Zone.</div>
+  </section>
+ 
+  <!-- ПРОТОКОЛЫ НА РОУТЕРЕ -->
+  <h2>Протоколы VPN для роутера в России: сравнение</h2>
+  <p>Выбор протокола на роутере особенно важен в России: ТСПУ активно фильтрует трафик на уровне провайдера, и стандартные протоколы без обфускации замедляются так же, как и трафик к заблокированным сайтам. При этом слабый процессор роутера может не справляться с ресурсоёмким шифрованием, поэтому важно выбирать протоколы, оптимизированные как по защите, так и по нагрузке на железо.</p>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Протокол</th>
+          <th>Обфускация</th>
+          <th>Нагрузка на CPU</th>
+          <th>Скорость</th>
+          <th>Статус в России 2026</th>
+          <th>Поддержка роутеров</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>WireGuard</strong></td>
+          <td><span class="cross">Нет</span></td>
+          <td>Минимальная</td>
+          <td>Очень высокая</td>
+          <td><span class="cross">Замедляется ТСПУ</span></td>
+          <td>Keenetic, ASUS, OpenWRT, DD-WRT</td>
+        </tr>
+        <tr>
+          <td><strong>AmneziaWG</strong></td>
+          <td><span class="check">Да (рандомизация)</span></td>
+          <td>Минимальная</td>
+          <td>Высокая</td>
+          <td><span class="check">Работает</span></td>
+          <td>Keenetic (Entware), OpenWRT</td>
+        </tr>
+        <tr>
+          <td><strong>OpenVPN (чистый)</strong></td>
+          <td><span class="cross">Нет</span></td>
+          <td>Высокая</td>
+          <td>Средняя</td>
+          <td><span class="cross">Блокируется</span></td>
+          <td>Все прошивки</td>
+        </tr>
+        <tr>
+          <td><strong>OpenVPN + Obfsproxy</strong></td>
+          <td><span class="check">Да</span></td>
+          <td>Высокая</td>
+          <td>Средняя</td>
+          <td><span class="check">Работает</span></td>
+          <td>OpenWRT, DD-WRT</td>
+        </tr>
+        <tr>
+          <td><strong>Outline (Shadowsocks)</strong></td>
+          <td><span class="check">Да (AEAD)</span></td>
+          <td>Средняя</td>
+          <td>Высокая</td>
+          <td><span class="check">Работает</span></td>
+          <td>Keenetic, OpenWRT</td>
+        </tr>
+        <tr>
+          <td><strong>VLESS+Reality</strong></td>
+          <td><span class="check">Да (под HTTPS)</span></td>
+          <td>Средняя</td>
+          <td>Высокая</td>
+          <td><span class="check">Работает (лучший выбор)</span></td>
+          <td>OpenWRT, Keenetic (Entware)</td>
+        </tr>
+        <tr>
+          <td><strong>IKEv2/IPSec</strong></td>
+          <td><span class="cross">Нет</span></td>
+          <td>Средняя</td>
+          <td>Высокая</td>
+          <td><span class="cross">Блокируется</span></td>
+          <td>Все прошивки</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="pro-tip">💡 <strong>Рекомендация:</strong> для большинства домашних роутеров в России оптимальны AmneziaWG (низкая нагрузка на CPU, отличная обфускация) и Outline (Shadowsocks) через BlancVPN или ZoogVPN. VLESS+Reality даёт максимальную устойчивость к DPI, но требует более мощного процессора и настройки через Entware на Keenetic или OpenWRT.</div>
+ 
+  <!-- ПРОШИВКА -->
+  <section id="proshivka">
+    <h2>Прошивка роутера для VPN</h2>
+    <p>Прошивка роутера, это операционная система, которая управляет всеми функциями устройства. Стандартные прошивки от производителей (MiWifi от Xiaomi, стандартная TP-Link) часто имеют ограниченную поддержку VPN-протоколов и не позволяют использовать современные методы обфускации. Альтернативные прошивки от сообщества, DD-WRT, OpenWRT, Tomato и Merlin, добавляют полноценный VPN-клиент, расширенные настройки файрвола и поддержку актуальных протоколов.</p>
+    <p>Перепрошивка роутера позволяет использовать WireGuard, AmneziaWG, VLESS и Shadowsocks там, где стандартная прошивка поддерживает только OpenVPN или PPTP. Это особенно важно для России, где именно обфускационные протоколы обходят ТСПУ.</p>
+    <div class="warn-tip">⚠️ <strong>Внимание:</strong> перепрошивка роутера несовместимой прошивкой может привести к неработоспособности устройства. Всегда проверяйте совместимость вашей точной модели роутера перед началом. Перепрошивка роутера, который ещё на гарантии, может лишить вас права на гарантийное обслуживание.</div>
+ 
+    <p>Ниже официальные инструкции по прошивке для популярных роутеров и прошивок:</p>
+ 
+    <div class="firmware-card">
+      <div class="fw-icon">🔧</div>
+      <div class="fw-body">
+        <h4>Keenetic (установка компонентов и Entware)</h4>
+        <p>Keenetic поддерживает WireGuard и OpenVPN через встроенные компоненты без перепрошивки. Для AmneziaWG и VLESS установите Entware.</p>
+        <a href="https://help.keenetic.com/hc/ru/articles/360021214160" target="_blank" rel="nofollow noopener">Официальная инструкция Keenetic по установке компонентов →</a>
+      </div>
+    </div>
+ 
+    <div class="firmware-card">
+      <div class="fw-icon">🔧</div>
+      <div class="fw-body">
+        <h4>TP-Link (Archer и TL-WR серии)</h4>
+        <p>Официальная страница обновления прошивки TP-Link с инструкциями для каждой модели.</p>
+        <a href="https://www.tp-link.com/ru/support/faq/688/" target="_blank" rel="nofollow noopener">Официальная инструкция TP-Link по обновлению прошивки →</a>
+      </div>
+    </div>
+ 
+    <div class="firmware-card">
+      <div class="fw-icon">🔧</div>
+      <div class="fw-body">
+        <h4>ASUS Merlin (расширенная прошивка для ASUS)</h4>
+        <p>Merlin добавляет поддержку WireGuard, продвинутые настройки VPN-клиента и скриптинг для роутеров ASUS RT серии.</p>
+        <a href="https://www.asuswrt-merlin.net/download" target="_blank" rel="nofollow noopener">Официальный сайт ASUS Merlin, скачать прошивку →</a>
+      </div>
+    </div>
+ 
+    <div class="firmware-card">
+      <div class="fw-icon">🔧</div>
+      <div class="fw-body">
+        <h4>DD-WRT (универсальная прошивка для многих роутеров)</h4>
+        <p>DD-WRT поддерживает сотни моделей роутеров и предлагает полноценный OpenVPN-клиент и WireGuard. Проверьте совместимость вашей модели перед установкой.</p>
+        <a href="https://dd-wrt.com/support/router-database/" target="_blank" rel="nofollow noopener">База данных совместимых роутеров DD-WRT →</a>
+      </div>
+    </div>
+ 
+    <div class="firmware-card">
+      <div class="fw-icon">🔧</div>
+      <div class="fw-body">
+        <h4>OpenWRT (открытая прошивка на базе Linux)</h4>
+        <p>OpenWRT поддерживает WireGuard, AmneziaWG, VLESS и Shadowsocks через установку пакетов. Наиболее гибкая прошивка для продвинутых пользователей.</p>
+        <a href="https://openwrt.org/toh/start" target="_blank" rel="nofollow noopener">Таблица совместимого оборудования OpenWRT →</a>
+      </div>
+    </div>
+ 
+    <div class="firmware-card">
+      <div class="fw-icon">🔧</div>
+      <div class="fw-body">
+        <h4>Tomato (для роутеров Broadcom)</h4>
+        <p>Tomato (FreshTomato) предлагает стабильный OpenVPN-клиент и понятный интерфейс для роутеров на чипах Broadcom, включая ASUS и Netgear.</p>
+        <a href="https://freshtomato.org/" target="_blank" rel="nofollow noopener">Официальный сайт FreshTomato, скачать прошивку →</a>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ПРЕИМУЩЕСТВА И ОГРАНИЧЕНИЯ -->
+  <h2 id="prei">Преимущества и ограничения VPN на роутере</h2>
+  <p>Перед тем как купить VPN для роутера или потратить время на настройку, важно понимать, в каких сценариях это решение оптимально, а где лучше использовать приложения на отдельных устройствах.</p>
+ 
+  <div class="pros-cons-section">
+    <div class="pros-box">
+      <h3>✅ Преимущества</h3>
+      <ul>
+        <li><strong>Один раз настроил, вся сеть защищена.</strong> Все устройства в домашней сети, смартфоны, ноутбуки, Smart TV Samsung и LG, игровые консоли, умные колонки, получают VPN-защиту автоматически, без установки приложений на каждое устройство.</li>
+        <li><strong>Работает на устройствах без поддержки VPN-приложений.</strong> Smart TV на Tizen (Samsung), WebOS (LG), Hisense VIDAA, игровые приставки PlayStation и Xbox не поддерживают VPN-клиенты напрямую. Роутер с VPN решает это одним подключением.</li>
+        <li><strong>Постоянная защита без ручного включения.</strong> VPN на роутере работает круглосуточно. Пользователям не нужно помнить о включении VPN перед каждым сеансом.</li>
+        <li><strong>Единая подписка на всю семью.</strong> Вместо покупки нескольких подписок для разных устройств достаточно одной. Особенно выгодно при использовании тарифов с безлимитным числом устройств.</li>
+        <li><strong>Прозрачность для гостей.</strong> Гости, подключающиеся к вашему Wi-Fi, автоматически получают защищённое соединение без дополнительных действий с их стороны.</li>
+      </ul>
+    </div>
+    <div class="cons-box">
+      <h3>❌ Ограничения</h3>
+      <ul>
+        <li><strong>Нагрузка на процессор роутера.</strong> Шифрование и расшифровка трафика для всей сети нагружает CPU роутера. Бюджетные модели могут ограничивать скорость VPN-соединения до 20–50 Мбит/с, даже если интернет значительно быстрее.</li>
+        <li><strong>Сложнее настроить.</strong> Установка VPN на роутер требует больше технических знаний, чем установка приложения. На некоторых моделях необходима перепрошивка.</li>
+        <li><strong>Обфускация сложнее реализуется.</strong> Современные протоколы ZoogShadowing и VLESS+Reality не поддерживаются стандартными прошивками. Для их использования нужен Entware на Keenetic или OpenWRT.</li>
+        <li><strong>Нельзя быстро переключить страну.</strong> Изменение VPN-сервера на роутере требует входа в интерфейс и смены конфигурации. На телефоне это делается в один клик.</li>
+        <li><strong>Банковские приложения могут блокировать иностранный IP.</strong> Сбербанк, Тинькофф и другие российские банки иногда требуют российский IP для входа. Придётся настраивать раздельное туннелирование на уровне роутера или временно отключать VPN.</li>
+      </ul>
+    </div>
+  </div>
+ 
+  <!-- ЗАКЛЮЧЕНИЕ -->
+  <h2>Заключение</h2>
+  <p>VPN на роутере это правильный выбор, если вы хотите защитить всю домашнюю сеть за один раз, без приложений на каждом устройстве. Особенно это актуально для Smart TV, игровых консолей и умной техники, где прямая установка VPN невозможна. Главное, выбрать роутер с поддержкой нужных протоколов и VPN-сервис с готовыми инструкциями для вашей модели. Для большинства домов в России Keenetic с WireGuard или Outline остаётся оптимальным сочетанием простоты и надёжности.</p>
+ 
+  <div style="text-align:center;margin:32px 0;">
+    <a class="btn" href="https://zoogsvp.online/ru-ru/best-vpn-offer-for-russia/?utm_source=zoog_affiliate&utm_medium=revshare&utm_campaign=aff664229459a657&a_aid=664229459a657" target="_blank" rel="nofollow noopener">🏆 Попробовать ZoogVPN бесплатно (10 ГБ) →</a>
+  </div>
+ 
+  <!-- FAQ -->
+  <section id="faq">
+    <h2>Часто задаваемые вопросы</h2>
+ 
+    <div class="faq-item">
+      <h3>Какой VPN для роутера лучше в России в 2026 году?</h3>
+      <p>По совокупности совместимости с роутерами, скорости и устойчивости к ТСПУ лидируют ZoogVPN (поддержка Keenetic, DD-WRT, ASUS без перепрошивки, ZoogShadowing) и BlancVPN (рекордная скорость 112 Мбит/с через Outline на Keenetic). Для максимальной устойчивости к блокировкам подойдёт Trust.Zone с VLESS+Reality на OpenWRT.</p>
+    </div>
+ 
+    <div class="faq-item">
+      <h3>Как установить VPN на роутер Keenetic?</h3>
+      <p>В веб-интерфейсе Keenetic перейдите в «Общие настройки → Изменить набор компонентов» и установите «Клиент WireGuard» или «Клиент OpenVPN». Затем перейдите в «Другие подключения» и добавьте новое VPN-подключение, загрузив конфигурационный файл (.conf или .ovpn) с сайта вашего VPN-провайдера. ZoogVPN и Trust.Zone предоставляют готовые файлы и пошаговые инструкции специально для Keenetic.</p>
+    </div>
+ 
+    <div class="faq-item">
+      <h3>Работает ли бесплатный VPN для роутера в России?</h3>
+      <p>Planet VPN предлагает бесплатный план без ограничений трафика с WireGuard-конфигурацией для Keenetic. ZoogVPN даёт 10 ГБ/мес бесплатно с поддержкой DD-WRT и ASUS. Однако большинство бесплатных VPN не поддерживают обфускацию, поэтому их трафик замедляется ТСПУ. Для надёжной постоянной работы рекомендуем недорогой платный план от 149–199 рублей в месяц.</p>
+    </div>
+ 
+    <div class="faq-item">
+      <h3>Нужна ли перепрошивка роутера для VPN?</h3>
+      <p>Keenetic и ASUS поддерживают WireGuard и OpenVPN без перепрошивки: достаточно установить компоненты через штатный интерфейс. TP-Link и Xiaomi в большинстве моделей требуют перепрошивки на OpenWRT для поддержки WireGuard. Для использования обфусцированных протоколов AmneziaWG и VLESS на Keenetic потребуется установка Entware.</p>
+    </div>
+ 
+    <div class="faq-item">
+      <h3>Какой протокол использовать для VPN на роутере в России?</h3>
+      <p>Для России в 2026 году оптимальны AmneziaWG (минимальная нагрузка на CPU, отличная обфускация) и Outline (Shadowsocks) через ZoogVPN или BlancVPN. VLESS+Reality даёт максимальную устойчивость к DPI, но требует более мощного процессора. Стандартный WireGuard и OpenVPN без обфускации замедляются ТСПУ и не рекомендуются для использования в России.</p>
+    </div>
+ 
+    <div class="faq-item">
+      <h3>Повлияет ли VPN на роутере на скорость интернета?</h3>
+      <p>Да, шифрование трафика требует вычислительных ресурсов процессора роутера. На мощных моделях (Keenetic Ultra, ASUS RT-AX88U) потери скорости составляют 10–20%. На бюджетных роутерах с медленным CPU скорость VPN-соединения может ограничиваться до 20–40 Мбит/с, даже если интернет значительно быстрее. WireGuard и AmneziaWG нагружают CPU значительно меньше, чем OpenVPN.</p>
+    </div>
+ 
+    <div class="faq-item">
+      <h3>Можно ли настроить VPN только для части устройств через роутер?</h3>
+      <p>Да, это называется раздельным туннелированием на уровне роутера. Keenetic поддерживает эту функцию из коробки: можно направить через VPN только конкретные устройства по их IP-адресам в локальной сети. Также можно настроить маршрутизацию по доменам: трафик к YouTube и Telegram пойдёт через VPN, а к банковским сайтам напрямую.</p>
+    </div>
+ 
+    <div class="faq-item">
+      <h3>Какой роутер лучше купить для VPN в России?</h3>
+      <p>Для большинства пользователей оптимален Keenetic: поддержка WireGuard и OpenVPN без перепрошивки, русскоязычный интерфейс, широкое сообщество с инструкциями на русском. Для продвинутых пользователей подойдёт ASUS RT-AX88U с прошивкой Merlin или любой роутер с поддержкой OpenWRT. Для максимальной производительности VPN выбирайте роутеры с процессором 1 ГГц и выше.</p>
+    </div>
+ 
+    <div class="faq-item">
+      <h3>Как проверить, что VPN на роутере работает?</h3>
+      <p>С любого устройства в домашней сети перейдите на сайт ipleak.net или 2ip.ru. Если VPN работает корректно, отобразится IP-адрес и страна сервера VPN, а не ваш реальный российский адрес. Дополнительно проверьте раздел DNS Addresses на ipleak.net: там не должно быть адресов вашего российского провайдера МТС, Ростелеком и других.</p>
+    </div>
+ 
+    <div class="faq-item">
+      <h3>Будут ли работать банковские приложения с VPN на роутере?</h3>
+      <p>Российские банковские приложения (Сбербанк, Тинькофф, ВТБ) иногда блокируют вход при обнаружении иностранного IP. Решение: настройте раздельное туннелирование на Keenetic, исключив устройство или IP-адреса банковских серверов из VPN-туннеля. Либо настройте два Wi-Fi-диапазона: один через VPN, второй напрямую, и переключайте смартфон в зависимости от задачи.</p>
+    </div>
+ 
+  </section>
+ 
+</main>
+ 
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col footer-brand">
+      <div class="logo" style="margin-bottom:10px;">
+        <svg width="28" height="28" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17 2L4 8v9c0 8.3 5.6 16 13 18 7.4-2 13-9.7 13-18V8L17 2z" fill="#FBBF24" opacity="0.15"/>
+          <path d="M17 2L4 8v9c0 8.3 5.6 16 13 18 7.4-2 13-9.7 13-18V8L17 2z" stroke="#FBBF24" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M12 17l3.5 3.5L22 13" stroke="#FBBF24" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span style="color:#FBBF24;font-weight:700;">Рабочие VPN</span>
+      </div>
+      <p>Рейтинг VPN, которые реально работают в России. Тестируем на живых мобильных и проводных подключениях, замеряем скорость, обход ТСПУ и утечки DNS.</p>
+      <a href="mailto:info@rabochie-vpn.com">info@rabochie-vpn.com</a>
+    </div>
+    <div class="footer-col">
+      <h4>Обзоры VPN</h4>
+      <ul>
+        <li><a href="#review-zoog">ZoogVPN</a></li>
+        <li><a href="#review-blanc">BlancVPN</a></li>
+        <li><a href="#review-trust">Trust.Zone</a></li>
+        <li><a href="#review-adguard">AdGuard VPN</a></li>
+        <li><a href="#review-planet">PlanetVPN</a></li
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>VPN по назначению</h4>
+      <ul>
+        <li><a href="/vpn-dlya-android/">VPN для Android</a></li>
+        <li><a href="/vpn-dlya-iphone/">VPN для iOS</a></li>
+        <li><a href="/vpn-dlya-pk/">VPN для ПК</a></li>
+        <li><a href="/vpn-dlya-youtube/">VPN для YouTube</a></li>
+        <li><a href="/vpn-dlya-telegram/">VPN для Telegram</a></li>
+        <li><a href="/vpn-dlya-televizora/">VPN для Телевизора</a></li>
+        <li><a href="/vpn-dlya-routera/">VPN для Роутера</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>О нас</h4>
+      <ul>
+        <li><a href="/about/">О проекте</a></li>
+        <li><a href="/privacy-policy/">Политика конфиденциальности</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 rabochie-vpn.com · Информация предоставляется в ознакомительных целях. Партнёрские ссылки помечены nofollow.</p>
+  </div>
+</footer>
+ 
+<div id="sticky-cta" role="complementary" aria-label="Специальное предложение">
+  <span class="sticky-cta-text">
+    <span class="desktop-text">🏆 ZoogVPN — скидка 78% + 3 месяца бесплатно</span>
+    <span class="mobile-text">🏆 ZoogVPN — 78%</span>
+  </span>
+  <a class="sticky-cta-btn" href="https://zoogsvp.online/ru-ru/best-vpn-offer-for-russia/?utm_source=zoog_affiliate&utm_medium=revshare&utm_campaign=aff664229459a657&a_aid=664229459a657" target="_blank" rel="nofollow noopener">Скачать</a>
+  <button class="sticky-cta-close" id="sticky-cta-close" aria-label="Закрыть">✕</button>
+</div>
+ 
+<script>
+  var burgerBtn = document.getElementById('burger-btn');
+  var mainNav = document.getElementById('main-nav');
+  if (burgerBtn && mainNav) {
+    burgerBtn.addEventListener('click', function() {
+      var isOpen = mainNav.classList.toggle('open');
+      burgerBtn.classList.toggle('open', isOpen);
+      burgerBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+    mainNav.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        mainNav.classList.remove('open');
+        burgerBtn.classList.remove('open');
+        burgerBtn.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+  var stickyCta = document.getElementById('sticky-cta');
+  var stickyClose = document.getElementById('sticky-cta-close');
+  var ctaDismissed = false;
+  function checkScroll() {
+    if (ctaDismissed) return;
+    var hero = document.querySelector('.hero');
+    if (!hero || !stickyCta) return;
+    if (hero.getBoundingClientRect().bottom < 0) {
+      stickyCta.classList.add('visible');
+    } else {
+      stickyCta.classList.remove('visible');
+    }
+  }
+  if (stickyClose) {
+    stickyClose.addEventListener('click', function() {
+      ctaDismissed = true;
+      stickyCta.classList.remove('visible');
+      stickyCta.style.display = 'none';
+    });
+  }
+  window.addEventListener('scroll', checkScroll, { passive: true });
+  checkScroll();
+</script>
+ 
+</body>
+</html>
